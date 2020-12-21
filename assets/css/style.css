@@ -1,0 +1,174 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    background: url("../img/wrapper-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    height: 105px;
+}
+
+.menu__list {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 105px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu__list li {
+    position: relative;
+}
+
+.menu__list > li:hover .sub-menu__list {
+    display: block;
+}
+
+.sub-menu__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding-top: 20px;
+    min-width: 250px;
+}
+
+.sub-menu__list > li {
+    background-color: #343434;
+}
+
+.sub-menu__link {
+    padding: 10px 20px;
+}
+
+.sub-sub-menu__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 250px;
+    background-color: #343434;
+    padding: 20px 0 20px 20px;
+}
+
+.sub-sub-menu__link {
+    padding: 10px 20px;
+}
+
+.sub-menu__list > li:hover .sub-sub-menu__list {
+    display: block;
+}
+
+.menu__link {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.menu__link:hover {
+    color: #ff7200;
+    background-color: #343434;
+}
+
+.menu__link.menu__link-border {
+    padding: 0;
+    border: 1px solid #fff;
+    transition: .2s;
+}
+
+.menu__link.menu__link-border:hover {
+    border: 1px solid #ff7200;
+    background-color: transparent;
+}
+
+.burger {
+    display: none;
+}
+
+.intro {
+    height: calc(100% - 105px);
+    display: flex;
+}
+
+.intro__content {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro__content h1 {
+    font-size: 72px;
+    margin-bottom: 105px;
+    z-index: 100;
+}
+
+.intro__content p {
+    font-size: 16px;
+    z-index: 100;
+}
