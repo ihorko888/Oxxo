@@ -45,6 +45,112 @@ h6 {
     display: block;
 }
 
+.pd {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 .wrapper {
     position: relative;
     height: 100vh;
@@ -171,4 +277,146 @@ h6 {
 .intro__content p {
     font-size: 16px;
     z-index: 100;
+}
+
+.about__text {
+    margin: 0 auto;
+    margin-bottom: 75px;
+    max-width: 550px;
+    text-align: center;
+}
+
+.content__title {
+    position: relative;
+    font-size: 36px;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.content__title:after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    background-color: #666666;
+    max-width: 170px;
+    height: 2px;
+}
+
+.content__subtitle {
+    margin: 0;
+    font-size: 14px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__slider {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.about__slider .slick-item img {
+    width: 100%;
+}
+
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
+.slick-prev.slick-arrow {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.slick-prev.slick-arrow:hover {
+    background-color: #fff;
+    border-color: #ff7200;
+}
+
+.slick-prev.slick-arrow:before {
+    content: '';
+    border-right: 10px solid #c5c5c5;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 0;
+    z-index: 10;
+    right: 5px;
+    top: 50%;
+    transition: .2s;
+}
+
+.slick-prev.slick-arrow:hover:before {
+    border-right: 10px solid #ff7200;
+}
+
+.slick-next.slick-arrow {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.slick-next.slick-arrow:hover {
+    background-color: #fff;
+    border-color: #ff7200;
+}
+
+.slick-next.slick-arrow:after {
+    content: '';
+    border-left: 10px solid #c5c5c5;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 0;
+    z-index: 10;
+    right: 5px;
+    top: 50%;
+    transition: .2s;
+}
+
+.slick-next.slick-arrow:hover:after {
+    border-left: 10px solid #ff7200;
+}
+
+.about__content-text {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-orange {
+    margin-top: 40px;
+    width: 160px;
+    height: 50px;
+    color: #ff7200;
+    background-color: transparent;
+    border: 1px solid #ff7200;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background-color: #ff7200;
+}
+
+.btn-orange + .btn-orange {
+    margin-left: 30px;
 }
