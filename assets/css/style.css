@@ -284,6 +284,7 @@ h6 {
     margin-bottom: 75px;
     max-width: 550px;
     text-align: center;
+    position: relative;
 }
 
 .content__title {
@@ -291,6 +292,7 @@ h6 {
     font-size: 36px;
     color: #666666;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .content__title:after {
@@ -419,4 +421,53 @@ h6 {
 
 .btn-orange + .btn-orange {
     margin-left: 30px;
+}
+
+.amazing {
+    background: url("../img/amazing-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.amazing:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.amazing .content__title {
+    color: #fff;
+}
+
+.amazing .content__title:after {
+    background-color: #fff;
+}
+
+.amazing__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.amazing__content-block {
+    margin-bottom: 80px;
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.amazing__content-block img {
+    margin-right: 30px;
+}
+
+.amazing__content-block:nth-child(4), .amazing__content-block:nth-child(5), .amazing__content-block:nth-child(6) {
+    margin-bottom: 0;
 }
