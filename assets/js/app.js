@@ -3017,15 +3017,24 @@ $(function () {
         slidesToScroll: 1
     });
     
+    $('#testimonialsSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
     
-    // $('#aboutSlider').slick({
-        // slidesToShow: 1,
-        // slidesToScroll: 1,
-    //     dots: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     fade: true,
-    //     cssEase: 'linear'
-    // });
+    $('#clientsSlider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1
+    });
+
+    // Gallery
+    
+    $(".work__block").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+          enabled: true
+        }
+    });
 
 });

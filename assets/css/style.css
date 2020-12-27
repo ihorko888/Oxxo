@@ -471,3 +471,258 @@ h6 {
 .amazing__content-block:nth-child(4), .amazing__content-block:nth-child(5), .amazing__content-block:nth-child(6) {
     margin-bottom: 0;
 }
+
+.team__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+    text-align: center;
+}
+
+.team__content-block {
+    width: 23%;
+}
+
+.team__photo {
+    margin-bottom: 30px;
+}
+
+.team__name {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.team__name span {
+    color: #ff7200;
+}
+
+.team__text {
+    margin-bottom: 20px;
+}
+
+.team__social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__social-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.team__social-block:hover {
+    background-color: #ff7200;
+}
+
+.team__social-block:hover .team__icon {
+    fill: #fff;
+}
+
+.team__icon {
+    width: 25px;
+    height: 25px;
+    fill: #666666;
+    transition: .2s;
+}
+
+.work__content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 260px;
+}
+
+.work__block {
+    position: relative;
+    height: 260px;
+    width: 25%;
+}
+
+.work__block img {
+    width: 100%;
+    height: 100%;
+}
+
+.work__block .work__overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.work__block .work__overlay .team__social-block {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+}
+
+.work__block:hover .work__overlay {
+    opacity: 1;
+}
+
+.work__block:hover .work__overlay h2 {
+    opacity: 1;
+    transition: .4s transform .2s, .4s opacity .2s;
+    transform: translateY(0);
+}
+
+.work__block:hover .work__overlay .work__overlay-text {
+    opacity: 1;
+    transition: .4s transform .3s, .4s opacity .3s;
+    transform: translateY(0);
+}
+
+.work__overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #f0f0f0;
+    bottom: 0;
+    text-align: center;
+    line-height: 90px;
+}
+
+.work__overlay-text p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.buy .about__text {
+    margin-bottom: 0;
+}
+
+.buy__buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.buy__buttons .btn-orange {
+    position: relative;
+    padding-left: 35px;
+}
+
+.buy__buttons .btn-orange .team__icon {
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    fill: #ff7200;
+}
+
+.btn-orange:hover .team__icon {
+    fill: #fff;
+}
+
+.testimonials {
+    position: relative;
+    background: url("../img/testimonials-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.testimonials h2 {
+    color: #fff;
+}
+
+.testimonials h2::after {
+    margin-bottom: 75px;
+    background-color: #fff;
+}
+
+.testimonials .about__text {
+    max-width: 780px;
+}
+
+.testimonials .about__slider {
+    width: 100%;
+}
+
+.testimonials .about__slider h4 {
+    margin-bottom: 30px;
+}
+
+.testimonials .about__slider .content__subtitle {
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.client__name {
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.client__name span {
+    color: #ff7200;
+}
+
+.testimonials .slick-next.slick-arrow,
+.testimonials .slick-prev.slick-arrow {
+    top: 115%;
+}
+
+.testimonials .slick-next.slick-arrow {
+    right: 42%;
+}
+
+.testimonials .slick-prev.slick-arrow {
+    left: 42%;
+}
+
+.clients {
+    padding: 50px 0;
+    background-color: #ff7200;
+}
+
+.clients__slider {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clients .slick-prev.slick-arrow {
+    left: -80px;
+    background-color: transparent;
+}
+
+.clients .slick-prev.slick-arrow:hover {
+    background-color: #fff;
+}
+
+.clients .slick-next.slick-arrow {
+    right: -80px;
+    background-color: transparent;
+}
+
+.clients .slick-next.slick-arrow:hover {
+    background-color: #fff;
+}
+
+.clients .slick-slide img {
+    width: 100%;
+}

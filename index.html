@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <title>Oxxo</title></head>
 <body>
+
+    <svg style="display: none;">
+        <symbol id="facebook" viewbox="0 0 155.139 155.139">
+            <g>
+                <path id="f_1_" d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+    		c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+    		v20.341H37.29v27.585h23.814v70.761H89.584z" />
+            </g>
+        </symbol>
     
+        <symbol id="twitter" viewbox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                    C480.224,136.96,497.728,118.496,512,97.248z" />
+            </g>
+        </symbol>
+    
+        <symbol id="tumblr" viewbox="0 0 24 24">
+            <g>
+                <path d="m19 22.594-1.175-3.425c-.458.214-1.327.399-1.968.419h-.091c-1.863 0-2.228-1.37-2.244-2.371v-7.47h4.901v-3.633h-4.883v-6.114h-3.575c-.059 0-.162.051-.176.179-.202 1.873-1.098 5.156-4.789 6.469v3.099h2.456v7.842c0 2.655 1.97 6.411 7.148 6.411l-.011-.002h.181c1.786-.03 3.783-.768 4.226-1.404z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="linkedin" viewbox="0 0 24 24">
+            <g>
+                <path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="mail" viewbox="0 0 512 512">
+            <g>
+                <path d="M467,76H45C20.137,76,0,96.262,0,121v270c0,24.885,20.285,45,45,45h422c24.655,0,45-20.03,45-45V121
+    			C512,96.306,491.943,76,467,76z M460.698,106c-9.194,9.145-167.415,166.533-172.878,171.967c-8.5,8.5-19.8,13.18-31.82,13.18
+    			s-23.32-4.681-31.848-13.208C220.478,274.284,64.003,118.634,51.302,106H460.698z M30,384.894V127.125L159.638,256.08L30,384.894z
+    			 M51.321,406l129.587-128.763l22.059,21.943c14.166,14.166,33,21.967,53.033,21.967c20.033,0,38.867-7.801,53.005-21.939
+    			l22.087-21.971L460.679,406H51.321z M482,384.894L352.362,256.08L482,127.125V384.894z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="zoom" viewbox="0 0 512 512">
+            <g>
+                <path d="M506.141,477.851L361.689,333.399c65.814-80.075,61.336-198.944-13.451-273.73c-79.559-79.559-209.01-79.559-288.569,0
+    			s-79.559,209.01,0,288.569c74.766,74.766,193.62,79.293,273.73,13.451l144.452,144.452c7.812,7.812,20.477,7.812,28.289,0
+    			C513.953,498.328,513.953,485.663,506.141,477.851z M319.949,319.948c-63.96,63.96-168.03,63.959-231.99,0
+    			c-63.96-63.96-63.96-168.03,0-231.99c63.958-63.957,168.028-63.962,231.99,0C383.909,151.918,383.909,255.988,319.949,319.948z"/>
+            </g>
+            <g>
+                <path d="M301.897,183.949h-77.94v-77.94c0-11.048-8.956-20.004-20.004-20.004c-11.048,0-20.004,8.956-20.004,20.004v77.94h-77.94
+                    c-11.048,0-20.004,8.956-20.004,20.004c0,11.048,8.956,20.004,20.004,20.004h77.94v77.94c0,11.048,8.956,20.004,20.004,20.004
+                    c11.048,0,20.004-8.956,20.004-20.004v-77.94h77.94c11.048,0,20.004-8.956,20.004-20.004
+                    C321.901,192.905,312.945,183.949,301.897,183.949z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="buy" viewbox="0 0 511.334 511.334">
+            <g>
+                <path d="m506.887 114.74c-3.979-5.097-10.086-8.076-16.553-8.076h-399.808l-5.943-66.207c-.972-10.827-10.046-19.123-20.916-19.123h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.468l23.018 256.439c.005.302-.01.599.007.903.047.806.152 1.594.286 2.37l.842 9.376c.016.177.034.354.055.529 2.552 22.11 13.851 41.267 30.19 54.21-8.466 10.812-13.532 24.407-13.532 39.172 0 35.106 28.561 63.667 63.666 63.667 35.106 0 63.667-28.561 63.667-63.667 0-7.605-1.345-14.9-3.801-21.667h114.936c-2.457 6.767-3.801 14.062-3.801 21.667 0 35.106 28.561 63.667 63.667 63.667s63.667-28.561 63.667-63.667-28.561-63.667-63.667-63.667h-234.526c-15.952 0-29.853-9.624-35.853-23.646l335.608-19.724c9.162-.538 16.914-6.966 19.141-15.87l42.67-170.67c1.567-6.272.158-12.918-3.821-18.016z"/>
+            </g>
+        </symbol>
+    </svg>    
     <div class="wrapper">
         <header class="header">
             <ul class="menu__list" id="nav">
@@ -218,7 +285,143 @@
             <!-- /.about__text -->
             <div class="team__content">
                 <div class="team__content-block">
-                    <img src="" alt="">
+                    <img class="team__photo" src="assets/img/team/team-img1.png" alt="Photo">
+                    <div class="team__name">
+                        Jenniffer Doe <span>/ Web Designer</span>
+                    </div>
+                    <div class="team__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</div>
+                    <div class="team__social">
+                        <a href="http://www.facebook.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.twitter.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.tumblr.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#tumblr"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.team__content-block -->
+                <div class="team__content-block">
+                    <img class="team__photo" src="assets/img/team/team-img2.png" alt="Photo">
+                    <div class="team__name">
+                        John Doe <span>/ General Manager</span>
+                    </div>
+                    <div class="team__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</div>
+                    <div class="team__social">
+                        <a href="http://www.facebook.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.twitter.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.tumblr.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#tumblr"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.team__content-block -->
+                <div class="team__content-block">
+                    <img class="team__photo" src="assets/img/team/team-img3.png" alt="Photo">
+                    <div class="team__name">
+                        Andrea Doe <span>/ Graphic Designer</span>
+                    </div>
+                    <div class="team__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</div>
+                    <div class="team__social">
+                        <a href="http://www.facebook.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.twitter.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.tumblr.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#tumblr"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.team__content-block -->
+                <div class="team__content-block">
+                    <img class="team__photo" src="assets/img/team/team-img4.png" alt="Photo">
+                    <div class="team__name">
+                        Michael Doe <span>/ Ceo</span>
+                    </div>
+                    <div class="team__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</div>
+                    <div class="team__social">
+                        <a href="http://www.facebook.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.twitter.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.tumblr.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#tumblr"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank" class="team__social-block">
+                            <svg class="team__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <!-- /.team__content-block -->
             </div>
@@ -227,6 +430,204 @@
         <!-- /.container -->
     </div>
     <!-- /.team -->
+    
+    <div class="work">
+        <div class="container">
+            <div class="about__text">
+                <h2 class="content__title">SEE OUR WORK.</h2>
+                <p class="content__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <!-- /.container -->
+    
+        <div class="work__content">
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img1.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img1.png" alt="Car">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img2.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img2.png" alt="Vine">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img3.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img3.png" alt="Sofa">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img4.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img4.png" alt="Chair">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img5.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img5.png" alt="Glass">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img6.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img6.png" alt="Glass">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img7.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img7.png" alt="Velo">
+            </div>
+            <div class="work__block">
+                <div class="work__overlay">
+                    <a href="assets/img/work/work-img8.png" target="_blank" class="team__social-block">
+                        <svg class="team__icon">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                    <div class="work__overlay-text">
+                        <p>A Bottle of Vine</p>
+                    </div>
+                </div>
+                <img src="assets/img/work/work-img8.png" alt="Bottle">
+            </div>
+        </div>
+        <!-- /.work__content -->
+    </div>
+    <!-- /.work -->
+    
+    <div class="buy pd">
+        <div class="container">
+            <div class="about__text">
+                <h2 class="content__title">BUY OXXO NOW!</h2>
+                <p class="content__subtitle">We are offering you a lot of <span>features</span>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+            </div>
+            <div class="buy__buttons">
+                <button class="btn-orange">
+                    <svg class="team__icon">
+                        <use xlink:href="#buy"></use>
+                    </svg>BUY NOW</button>
+                <button class="btn-orange">
+                    <svg class="team__icon">
+                        <use xlink:href="#mail"></use>
+                    </svg>CONTACT US
+                </button>
+            </div>
+            <!-- /.but__buttons -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.but -->
+    
+    <div class="testimonials pd">
+        <div class="container">
+            <div class="about__text">
+                <h2 class="content__title">WHAT OUR CLIENTS SAY?</h2>
+                <div class="about__slider" id="testimonialsSlider">
+                    <div class="slick-item">
+                        <h4>THEY ARE AWESOME</h4>
+                        <p class="content__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <div class="client__name">JONATHAN DOE / <span>LOREM IPSUM INC</span></div>
+                    </div>
+                    <!-- /.slick-item -->
+                    <div class="slick-item">
+                        <h4>THEY ARE AWESOME</h4>
+                        <p class="content__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <div class="client__name">JONATHAN DOE / <span>LOREM IPSUM INC</span></div>
+                    </div>
+                    <!-- /.slick-item -->
+                </div>
+                <!-- /.about__slider -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.testimonials -->
+    
+    <div class="clients">
+        <div class="clients__slider" id="clientsSlider">
+            <div class="slick-item">
+                <img src="assets/img/clients/clients-logo1.png" alt="Logo">
+            </div>
+            <!-- /.slick-item -->
+            <div class="slick-item">
+                <img src="assets/img/clients/clients-logo2.png" alt="Logo">
+            </div>
+            <!-- /.slick-item -->
+            <div class="slick-item">
+                <img src="assets/img/clients/clients-logo3.png" alt="Logo">
+            </div>
+            <!-- /.slick-item -->
+            <div class="slick-item">
+                <img src="assets/img/clients/clients-logo4.png" alt="Logo">
+            </div>
+            <!-- /.slick-item -->
+            <div class="slick-item">
+                <img src="assets/img/clients/clients-logo5.png" alt="Logo">
+            </div>
+            <!-- /.slick-item -->
+            <div class="slick-item">
+                <img src="assets/img/clients/clients-logo6.png" alt="Logo">
+            </div>
+            <!-- /.slick-item -->
+        </div>
+        <!-- /.about__slider -->
+    </div>
+    <!-- /.clients -->
 
 </body>
 </html>
