@@ -3037,4 +3037,9 @@ $(function () {
         }
     });
 
+    $('.contact__title-less').on('click', function() {
+        $(this).next().slideToggle();
+        $(this).toggleClass('contact__title-less--active');
+    });
+
 });

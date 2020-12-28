@@ -726,3 +726,196 @@ h6 {
 .clients .slick-slide img {
     width: 100%;
 }
+
+.responsive__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsive__about {
+    width: 48%;
+}
+
+.responsive__about-block {
+    display: flex;
+    align-items: flex-start;
+}
+
+.responsive__about-block + .responsive__about-block {
+    margin-top: 40px;
+}
+
+.responsive__about-block .team__social-block {
+    margin-right: 35px;
+    width: 70px;
+    height: 70px;
+    background-color: #ff7200;
+    cursor: auto;
+}
+
+.responsive__about-text h5 {
+    font-size: 18px;
+}
+
+.responsive__about-text p {
+    font-size: 14px;
+}
+
+.responsive__about-block .team__social-block .team__icon {
+    fill: #fff;
+}
+
+.responsive__about-block .team__icon {
+    width: auto;
+    height: 35px;
+}
+
+.contact {
+    padding: 50px 0 100px;
+    background-color: #303030;
+}
+
+.contact__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__block {
+    width: 25%;
+    color: #fff;
+    font-style: normal;
+}
+
+.contact__block h4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.contact__block h4 .team__social-block {
+    margin-right: 10px;
+    background: transparent;
+    width: inherit;
+    height: inherit;
+    cursor: auto;
+}
+
+.contact__block h4 .team__social-block .team__icon {
+    fill: #fff;
+}
+
+.contact__block address {
+    font-style: normal;
+}
+
+.contact__block address p {
+    line-height: 1.5;
+    color: #acabab;
+    margin-bottom: 30px;
+}
+
+.contact__block address p span {
+    color: #fff;
+}
+
+.contact__soc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__soc .team__social-block {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.contact__soc .team__social-block .team__icon {
+    fill: #fff;
+}
+
+.contact__soc .team__social-block:hover {
+    border-color: #ff7200;
+}
+
+.contact__soc .team__social-block:hover .team__icon {
+    fill: #ff7200;
+}
+
+.contact__block-inner {
+    display: flex;
+}
+
+.contact__block-inner + .contact__block-inner {
+    margin-top: 35px;
+}
+
+.contact__block-img {
+    margin-right: 15px;
+}
+
+.contact__block-text h5 {
+    font-size: 14px;
+}
+
+.contact__block-text p {
+    font-size: 13px;
+}
+
+.contact__block-text p span {
+    color: #ff7200;
+}
+
+.contact__title-less {
+    position: relative;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+}
+
+.contact__title-less .team__icon.plus,
+  .contact__title-less .team__icon.minus {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+    transition: .2s;
+}
+
+.bg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff7200;
+    border-radius: 50%;
+}
+
+.contact__title-less.contact__title-less--active .team__icon.plus {
+    opacity: 0;
+    background-color: transparent;
+}
+
+.contact__title-less.contact__title-less--active .team__icon.minus {
+    opacity: 1;
+}
+
+.block-line {
+    height: 1.5px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contact__block-dn {
+    display: none;
+    margin-top: 0;
+    font-size: 13px;
+    color: #c2c2c2;
+}
