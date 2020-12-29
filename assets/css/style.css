@@ -781,7 +781,7 @@ h6 {
 }
 
 .contact__block {
-    width: 25%;
+    width: 23%;
     color: #fff;
     font-style: normal;
 }
@@ -918,4 +918,103 @@ h6 {
     margin-top: 0;
     font-size: 13px;
     color: #c2c2c2;
+}
+
+.contact__block .input {
+    width: 100%;
+    padding: 10px 40px 10px 5px;
+    border-radius: 2px;
+    border: none;
+    background-color: #fff;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.form__group .team__icon {
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form .btn-orange {
+    background-color: #ff7200;
+    color: #fff;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-left: auto;
+}
+
+.form .btn-orange:hover {
+    background-color: #fff;
+    color: #ff7200;
+    fill: #ff7200;
+}
+
+.form .btn-orange:hover .team__icon {
+    fill: #ff7200;
+}
+
+.form .btn-orange .team__icon {
+    fill: #fff;
+    transition: none;
+}
+
+.footer {
+    padding: 10px 0 20px;
+    background-color: #202020;
+    color: #ffffff;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.footer__left p {
+    font-size: 14px;
+}
+
+.footer__logo img {
+    width: 95px;
+}
+
+.footer__logo span {
+    display: block;
+    font-size: 9px;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.footer__menu-link {
+    font-size: 14px;
+    color: #c2c2c2;
+    transition: .2s;
+}
+
+.footer__menu-link:hover {
+    color: #fff;
 }
