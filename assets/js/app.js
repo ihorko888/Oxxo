@@ -3042,4 +3042,29 @@ $(function () {
         $(this).toggleClass('contact__title-less--active');
     });
 
+    let intro = $('#intro');
+    let header = $('#nav');
+    let introH = intro.innerHeight();
+    let headerH = header.innerHeight();
+    let scrollTop = $(window).scrollTop();
+    
+    headerScroll();
+    
+    $(window).on('scroll resize', function () {
+        headerScroll();
+    });
+    
+    function headerScroll() {
+        introH = intro.innerHeight();
+        headerH = header.innerHeight();
+    
+        let scrollTop = $(this).scrollTop();
+    
+        if (scrollTop >= (introH - headerH)) {
+            header.addClass('header--dark');
+        } else {
+            header.removeClass('header--dark');
+        }
+    };
+
 });

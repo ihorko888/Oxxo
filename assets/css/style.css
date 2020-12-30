@@ -171,6 +171,10 @@ h6 {
     height: 105px;
 }
 
+.menu__list.header--dark {
+    background-color: #666666;
+}
+
 .menu__list {
     position: fixed;
     display: flex;
@@ -181,6 +185,8 @@ h6 {
     padding: 0 100px;
     text-transform: uppercase;
     color: #fff;
+    z-index: 555;
+    transition: .2s;
 }
 
 .menu__list li {
@@ -196,7 +202,7 @@ h6 {
     position: absolute;
     left: 0;
     top: 20px;
-    padding-top: 20px;
+    padding-top: 51px;
     min-width: 250px;
 }
 
