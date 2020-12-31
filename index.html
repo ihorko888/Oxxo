@@ -151,27 +151,27 @@
         <header class="header" id="header">
             <ul class="menu__list" id="nav">
                 <li>
-                    <a href="index.html" class="menu__link">
+                    <a href="index.html" class="menu__link" data-scroll="#about">
                         about us
                     </a>
                 </li>
                 <li>
-                    <a href="graphic.html" class="menu__link">who we are?</a>
+                    <a href="graphic.html" class="menu__link" data-scroll="#amazing">who we are?</a>
                 </li>
                 <li>
-                    <a href="about.html" class="menu__link">portfolio</a>
+                    <a href="about.html" class="menu__link" data-scroll="#work">portfolio</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="menu__link">our team</a>
+                    <a href="contact.html" class="menu__link" data-scroll="#team">our team</a>
                 </li>
-                <li>
+                <li class="dn">
                     <a href="contact.html" class="menu__link menu__link-border">
                         <img src="assets/img/Logo.svg" alt="Logo">
                         
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" class="menu__link">services</a>
+                    <a href="contact.html" class="menu__link" data-scroll="#">services</a>
     
                     <ul class="sub-menu__list">
                         <li>
@@ -201,21 +201,22 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="" class="sub-menu__link"></a>
-                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html" class="menu__link">clients</a>
+                    <a href="contact.html" class="menu__link" data-scroll="#testimonials">clients</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="menu__link">how we do?</a>
+                    <a href="contact.html" class="menu__link" data-scroll="#responsive">how we do?</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="menu__link">contact us</a>
+                    <a href="contact.html" class="menu__link" data-scroll="#contact">contact us</a>
                 </li>
             </ul>
+    
+            <a href="contact.html" class="menu__link menu__link-border menu__link-none">
+                <img src="assets/img/Logo.svg" alt="Logo">
+            </a>
     
             <button class="burger" type="button" id="navToggle">
                 <span class="burger__line">1</span>
@@ -278,7 +279,7 @@
     </div>
     <!-- /.about -->
     
-    <div class="amazing pd">
+    <div class="amazing pd" id="amazing">
         <div class="container">
             <div class="about__text">
                 <h2 class="content__title">WE ARE AMAZING. YES WE ARE.</h2>
@@ -344,7 +345,7 @@
     </div>
     <!-- /.amazing -->
     
-    <div class="team pd">
+    <div class="team pd" id="team">
         <div class="container">
             <div class="about__text">
                 <h2 class="content__title">WE ARE A TEAM.</h2>
@@ -502,7 +503,7 @@
     </div>
     <!-- /.team -->
     
-    <div class="work">
+    <div class="work" id="work">
         <div class="container">
             <div class="about__text">
                 <h2 class="content__title">SEE OUR WORK.</h2>
@@ -644,7 +645,7 @@
     </div>
     <!-- /.but -->
     
-    <div class="testimonials pd">
+    <div class="testimonials pd" id="testimonials">
         <div class="container">
             <div class="about__text">
                 <h2 class="content__title">WHAT OUR CLIENTS SAY?</h2>
@@ -669,7 +670,7 @@
     </div>
     <!-- /.testimonials -->
     
-    <div class="clients">
+    <div class="clients" id="services">
         <div class="clients__slider" id="clientsSlider">
             <div class="slick-item">
                 <img src="assets/img/clients/clients-logo1.png" alt="Logo">
@@ -700,7 +701,7 @@
     </div>
     <!-- /.clients -->
     
-    <div class="responsive pd">
+    <div class="responsive pd" id="responsive">
         <div class="container">
             <div class="about__text">
                 <h2 class="content__title">RESPONSIVE. POWERFUL.</h2>
@@ -752,7 +753,7 @@
     </div>
     <!-- /.responsive -->
     
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="contact__blocks">
                 <div class="contact__block">
