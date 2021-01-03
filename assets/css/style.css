@@ -50,6 +50,10 @@ h6 {
     padding-bottom: 100px;
 }
 
+.dn {
+    display: none;
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
@@ -210,6 +214,15 @@ h6 {
     padding-top: 35px;
     min-width: 250px;
     font-size: 14px;
+    z-index: 1000;
+}
+
+.sub-menu__list li:hover {
+    background-color: #f343434f;
+}
+
+.sub-menu__list li a {
+    width: 100%;
 }
 
 .sub-menu__list > li {
@@ -278,6 +291,27 @@ h6 {
     .sub-sub-menu__list {
         left: -100%;
     }
+
+    .responsive .responsive__content {
+        justify-content: center;
+    }
+
+    .responsive .responsive__content .responsive__pc {
+        margin-bottom: 30px;
+    }
+
+    .responsive .responsive__content .responsive__pc img {
+        width: 100%;
+    }
+
+    .responsive .responsive__about {
+        width: 100%;
+    }
+
+    .contact .contact__block {
+        margin-top: 40px;
+        width: 48%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -321,12 +355,99 @@ h6 {
     .dn {
         display: none;
     }
+
+    .team__content .team__content-block {
+        width: 45%;
+    }
+
+    .work__content .work__block img {
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .responsive .responsive__content .responsive__pc {
+        margin-right: 0;
+    }
+
+    .footer .footer__left {
+        flex-wrap: wrap;
+    }
+
+    .footer .footer__menu {
+        width: 45%;
+    }
+
+    .team .team__photo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .work__content .work__block {
+        width: 50%;
+    }
+
+    .clients {
+        padding: 25px 0 !important;
+    }
+
+    .footer .footer__menu {
+        width: 60%;
+    }
 }
 
 @media (max-width: 576px) {
     .header {
         justify-content: space-around;
         padding: 0;
+    }
+
+    .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .btn-orange + .btn-orange {
+        margin-left: 0 !important;
+    }
+
+    .amazing__content .amazing__content-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team__content {
+        justify-content: center !important;
+    }
+
+    .team__content .team__content-block {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .team__content .team__content-block .team__photo {
+        width: 80%;
+    }
+
+    .work__content .work__block {
+        width: 100%;
+    }
+
+    .buy .buy__buttons {
+        justify-content: space-around;
+    }
+
+    .contact .contact__block {
+        width: 100%;
+    }
+
+    .footer .footer__left {
+        width: 100%;
+    }
+
+    .footer .footer__menu {
+        width: 100%;
     }
 }
 
@@ -386,7 +507,7 @@ body.show-nav {
 }
 
 .intro {
-    height: calc(100% - 105px);
+    height: 100%;
     display: flex;
 }
 
@@ -607,6 +728,7 @@ body.show-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     color: #666666;
     text-align: center;
 }
@@ -616,6 +738,7 @@ body.show-nav {
 }
 
 .team__photo {
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -739,6 +862,7 @@ body.show-nav {
 .buy__buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -818,11 +942,11 @@ body.show-nav {
 }
 
 .testimonials .slick-next.slick-arrow {
-    right: 42%;
+    right: calc(50% - 50px);
 }
 
 .testimonials .slick-prev.slick-arrow {
-    left: 42%;
+    left: calc(50% - 50px);
 }
 
 .clients {
@@ -834,10 +958,10 @@ body.show-nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 0 80px;
 }
 
 .clients .slick-prev.slick-arrow {
-    left: -80px;
     background-color: transparent;
 }
 
@@ -846,7 +970,6 @@ body.show-nav {
 }
 
 .clients .slick-next.slick-arrow {
-    right: -80px;
     background-color: transparent;
 }
 
@@ -861,6 +984,11 @@ body.show-nav {
 .responsive__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.responsive__pc {
+    margin-right: 30px;
 }
 
 .responsive__about {
@@ -909,6 +1037,7 @@ body.show-nav {
 .contact__blocks {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact__block {
@@ -1113,6 +1242,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer__left {
@@ -1137,6 +1267,7 @@ textarea {
 .footer__menu {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 35%;
 }
 

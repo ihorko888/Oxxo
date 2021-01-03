@@ -3024,7 +3024,17 @@ $(function () {
     
     $('#clientsSlider').slick({
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 4
+                }
+            },
+        ]
     });
 
     // Gallery
