@@ -172,7 +172,7 @@ h6 {
 }
 
 .header {
-    height: 105px;
+    height: 90px;
     position: fixed;
     width: 100%;
     padding: 0 100px;
@@ -185,7 +185,7 @@ h6 {
 
 .header.header--dark {
     height: 90px;
-    padding: 0 120px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
 }
@@ -193,7 +193,7 @@ h6 {
 .menu__list {
     display: flex;
     width: 100%;
-    height: 105px;
+    height: 90px;
     justify-content: space-around;
     align-items: center;
 }
@@ -210,8 +210,8 @@ h6 {
     display: none;
     position: absolute;
     left: 0;
-    top: 35px;
-    padding-top: 35px;
+    top: 31px;
+    padding-top: 30px;
     min-width: 250px;
     font-size: 14px;
     z-index: 1000;
@@ -279,6 +279,10 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+    .header {
+        padding: 0 70px;
+    }
+
     .menu__link {
         font-size: 11px;
     }
@@ -324,7 +328,7 @@ h6 {
     .menu__list {
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 100%;
         min-height: calc(100vh - 90px);
         background-color: rgba(175, 175, 175, 0.9);
         position: absolute;
@@ -342,17 +346,39 @@ h6 {
 
     .menu__list.show {
         transform: translateX(0);
+        text-align: center;
+    }
+
+    .menu__list.show li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu__list.show li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .burger {
         display: block !important;
     }
 
+    .menu__link {
+        font-size: 14px;
+    }
+
+    .menu__link:hover {
+        border-radius: 0;
+    }
+
     .menu__link-none {
         display: inline-block;
     }
 
-    .dn {
+    .menu__list.show .logo-none {
         display: none;
     }
 
@@ -1044,6 +1070,10 @@ body.show-nav {
     width: 23%;
     color: #fff;
     font-style: normal;
+}
+
+.contact__block .dn {
+    margin-top: 0;
 }
 
 .contact__block h4 {
