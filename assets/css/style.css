@@ -210,7 +210,7 @@ h6 {
     display: none;
     position: absolute;
     left: 0;
-    top: 31px;
+    top: 34px;
     padding-top: 30px;
     min-width: 250px;
     font-size: 14px;
@@ -296,6 +296,10 @@ h6 {
         left: -100%;
     }
 
+    .sub-menu__list {
+        top: 31px;
+    }
+
     .responsive .responsive__content {
         justify-content: center;
     }
@@ -338,6 +342,10 @@ h6 {
         z-index: 1;
         transform: translateX(100%);
         transition: transform .2s ease-out;
+    }
+
+    .menu__list li {
+        overflow-y: auto;
     }
 
     .menu__list .menu__link-border {
@@ -474,6 +482,16 @@ h6 {
 
     .footer .footer__menu {
         width: 100%;
+    }
+
+    .intro .intro__content ul {
+        padding: 0 15px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .intro .intro__content ul li {
+        margin: 0 15px;
     }
 }
 
